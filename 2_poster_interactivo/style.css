@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.pantalla {
+
+  width: 750px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+}
+
+.pantalla .fondo {
+  width: 100%;
+}
+
+.bloque1 {
+  position: absolute;
+  top: 47%;
+  left: 20%;
+}
+
+.bloque2 {
+  position: absolute;
+  top: 31%;
+  left: 50%;
+}
+
+.moneda1 {
+  position: absolute;
+  top: 36%;
+  left: 25%;
+  cursor: pointer;
+}
+
+.moneda2 {
+  position: absolute;
+  top: 36%;
+  left: 35%;
+  cursor: pointer;
+}
+
+.corazon {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  cursor: pointer;
+}
+
+.moneda3 {
+  position: absolute;
+  top: 53%;
+  left: 88%;
+  cursor: pointer;
+}
