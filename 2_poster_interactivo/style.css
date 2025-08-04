@@ -58,31 +58,33 @@
   cursor: pointer;
 }
 
-/* Contador de monedas y corazones */
-.hud {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-  font-family: 'Arial', sans-serif;
-  font-size: 18px;
-  color: white;
-  z-index: 1000;
-}
 
-.hud-item {
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 8px;
-}
+/* Contador monedas y corazones */
 
-.hud-item img {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
+    .hud {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: white;
+      z-index: 1000;
+    }
+
+    .hud-item {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .hud-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
