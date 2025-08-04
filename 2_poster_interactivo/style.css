@@ -58,6 +58,18 @@
   cursor: pointer;
 }
 
+/* Clase para asignar animación */
+.saltar{
+  animation: salto 0.6s ease forwards;
+}
+
+/* Animación moneda desaparece */
+@keyframes salto {
+  0%{transform: translateY(0); opacity: 1;}
+  30%{transform: translateY(-60px);}
+  100%{transform: translateY(0px); opacity: 0;}
+}
+
 
 /* Contador monedas y corazones */
 
