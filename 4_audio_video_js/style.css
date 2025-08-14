@@ -8,6 +8,13 @@ body {
     height: 100vh;
     margin: 0;
 }
+.img-min{
+  width: 150px;
+}
+
+.image{
+  text-align: center;
+}
 
 .container {
     display: flex;
