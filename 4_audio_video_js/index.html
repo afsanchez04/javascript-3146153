@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Video y Imagen</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="video" width="400" controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+            <div class="buttons">
+                <button id="play-video">Play</button>
+                <button id="stop-video">Stop</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <div class="image" id="image1">
+                <img src="image1.jpg" alt="Imagen 1">
+                <button id="play-stop-img1">Play / Stop</button>
+            </div>
+            <div class="image" id="image2">
+                <img src="image2.jpg" alt="Imagen 2">
+                <button id="play-stop-img2">Play / Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
