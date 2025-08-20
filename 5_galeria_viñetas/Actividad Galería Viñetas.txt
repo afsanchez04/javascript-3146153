@@ -1,0 +1,5 @@
+Actividad Galería Viñetas:
+ 
+- Agregar efecto de sonido a las funciones del poster animado (sumar moneda, sumar vida)
+- Agregar botón para música de fondo
+- Crear carrusel con 2 escenas adicionales
