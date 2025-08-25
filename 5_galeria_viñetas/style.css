@@ -1,0 +1,192 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.pantalla{
+    position: relative;
+    width: 750px;
+    height:500px;
+    margin: auto;
+}
+
+.pantalla .fondo{
+    width: 100%;
+}
+
+.bloque1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.bloque2{
+    position: absolute;
+    top: 36%;
+    left: 53%;
+}
+.moneda1{
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    cursor: pointer;
+}
+.moneda2{
+    position: absolute;
+    top: 38%;
+    left: 33%;
+    cursor: pointer;
+}
+
+.moneda3{
+    position: absolute;
+    top: 52%;
+    left: 88%;
+    cursor: pointer;
+}
+
+.corazon{
+    position: absolute;
+    top: 23%;
+    left: 58%;
+    cursor: pointer;
+}
+
+/* clase para asignar animación */
+.saltar{
+    animation: salto 0.6s ease forwards;
+}
+
+/* animación */
+@keyframes salto{
+    0%{
+        transform: translateY(0); opacity: 1;
+    }
+    30%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0px); opacity: 0;
+    }
+}
+.bloque1{
+    animation: mover 10s infinite alternate ease-in-out;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+.bloque2{
+    animation: movimiento 7s infinite alternate ease-in-out;
+}
+@keyframes movimiento{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+/* Contador monedas y corazones */
+
+    .hud {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+      color: white;
+      z-index: 1000;
+    }
+
+    .hud-item {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .hud-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+
+    /* ----- Carrusel ----- */
+.carrusel {
+  position: relative;
+  width: 750px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.escenas {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.escena {
+  min-width: 100%;
+  display: none;
+}
+
+.escena.activa {
+  display: block;
+}
+
+/* Botones anterior/siguiente */
+.btn {
+  position: absolute;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+.anterior { left: 10px; }
+.siguiente { right: 10px; }
+
+/* Miniaturas */
+.miniaturas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.miniaturas img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+.miniaturas img:hover {
+  border: 3px solid #FFD700;
+}
+

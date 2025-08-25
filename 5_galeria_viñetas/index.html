@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel Escenas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="carrusel">
+    <!-- Botón anterior -->
+    <button class="btn anterior">&#10094;</button>
+
+    <!-- Escenas -->
+    <div class="escenas">
+      <!-- Escena 1 -->
+      <div class="escena activa">
+        <div class="pantalla">
+          <div class="hud">
+            <div class="hud-item">
+              <img src="./assets/MONEDA1.png" alt="Moneda">
+              <span id="contador-monedas">0</span>
+            </div>
+            <div class="hud-item">
+              <img src="./assets/coarazon1.png" alt="Corazón">
+              <span id="contador-corazones">0</span>
+            </div>
+          </div>
+          <img class="fondo" src="./assets/fondo2.png" alt="">
+          <img class="bloque1" src="./assets/ladrillos2.png" alt="">
+          <img class="bloque2" src="./assets/ladrillo1.png" alt="">
+          <img class="coin moneda1" src="./assets/moneda1.png" alt="">
+          <img class="coin moneda2" src="./assets/moneda 2.png" alt="">
+          <img class="coin moneda3" src="./assets/moneda 3.png" alt="">
+          <img class="corazon" src="./assets/coarazon1.png" alt="">
+        </div>
+      </div>
+
+      <!-- Escena 2  -->
+      <div class="escena">
+        <div class="pantalla">
+
+        </div>
+      </div>
+
+      <!-- Escena 3 -->
+      <div class="escena">
+        <div class="pantalla">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón siguiente -->
+    <button class="btn siguiente">&#10095;</button>
+  </div>
+
+  <!-- Miniaturas -->
+  <div class="miniaturas">
+    <img src="./assets/fondo2.png" data-index="0" alt="Miniatura 1">
+    <img src="./assets/fondo3.png" data-index="1" alt="Miniatura 2">
+    <img src="./assets/fondo4.png" data-index="2" alt="Miniatura 3">
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
