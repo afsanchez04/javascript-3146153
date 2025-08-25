@@ -27,3 +27,50 @@ corazones.forEach(function (corazon) {
         contadorCorazones.textContent = totalCorazones;
     })
 })
+
+
+
+///Galería
+
+const escenas = document.querySelectorAll('.escena')
+const btnAnterior = document.querySelector('.anterior')
+const btnSiguiente = document.querySelector('.siguiente')
+const miniaturas = document.querySelectorAll('.miniaturas img')
+let indice = 0
+
+//console.log(escenas) //Todas las escenas
+//console.log(escenas[1]) //Solo la segunda escena
+
+function mostrarEscena(i){
+    //console.log(escenas[i])
+    for (let j = 0; j < escenas.length; j++) {
+        escenas[j].classList.remove("activa")
+    }
+
+    escenas[i].classList.add("activa")
+    indice = i
+}
+
+//Botón siguiente
+btnSiguiente.addEventListener("click", function(){
+    indice = indice + 1
+    if(indice >= escenas.length){
+        indice = 0 //Para que vuelva a la primera escena
+    }
+    mostrarEscena(indice)
+})
+
+//Botón anterior
+btnAnterior.addEventListener("click", function(){
+    indice = indice - 1
+    if(indice < 0){
+        indice = escenas.length - 1 //Para que vaya a la última escena
+    }
+    mostrarEscena(indice)
+})
+
+
+
+
+
+
