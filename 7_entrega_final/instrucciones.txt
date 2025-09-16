@@ -1,0 +1,30 @@
+Actividad final javascript:
+
+Desarrollar la aplicación funcional del comic interactivo basado en el guion del proyecto.
+
+Requerimientos:
+- Utilizar base de datos con información real del comic en un archivo independiente 
+- Diseñar el mockup de la pantalla de capitulo.html
+- La plantilla de la página capitulo.html debe mostrar:
+  - Botón volver atrás
+  - Número del capítulo
+  - Título
+  - Descripción 
+  - Botón de play para acceder al video. 
+  - Imagen del capítulo
+  - Pestaña donde se muestre una lista de navegación de capítulos donde cada enlace sea una miniatura. Al dar click en el capítulo debe llevar a la página del capítulo correspondiente. 
+- Al dar click al botón de play el video se debe mostrar sobre el contenido en pantalla completa 
+
+
+Páginas del sitio web: 
+- index.html (Botón para ingresar al comic)
+- comic.html (Donde el usuario explora el comic)
+- capitulo.html (En esta página se mostrará el capítulo elegido)
+
+
+
+Ejercicios a repasar para la sustentación:
+- Recorrer elementos de un array de objetos e imprimir propiedad indicada
+- Dar click a un botón y mover / desaparecer un div en la dirección indicada
+- Dar click a un botón y aplicar un filtro a una imagen 
+- Recorrer un array de objetos y mostrar cards con información de cada objeto (Mismo proceso para mostrar la lista de capítulos del comic)
