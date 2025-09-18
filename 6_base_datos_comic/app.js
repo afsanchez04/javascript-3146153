@@ -12,8 +12,10 @@ descripcionComic.textContent = comic.descripcion
 comic.capitulos.forEach(cap => {
   const li = document.createElement("li")
   li.innerHTML = `
-    <p>${cap.nombreCap}</p>
-    <img src="${cap.imgPortada}" width="150" alt="">
+    <a href="./capitulo.html?id=${cap.id}">
+      <p>${cap.nombreCap}</p>
+      <img src="${cap.imgPortada}" width="150" alt="">
+    </a>
   `
   listaCaps.appendChild(li)
 });
