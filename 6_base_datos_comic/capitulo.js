@@ -1,6 +1,6 @@
 
 const params = new URLSearchParams(window.location.search)
-const id = paseInt( params.get("id") )
+const id = parseInt( params.get("id") )
 
 console.log("Te encuentras en el capitulo",id)
 
